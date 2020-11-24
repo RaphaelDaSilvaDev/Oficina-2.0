@@ -5,13 +5,13 @@
 ![base](https://user-images.githubusercontent.com/66075182/100111283-b391c880-2e4c-11eb-9cdd-6174166312e7.png)
 
 ## Tecnologias usadas
-*Html
+* Html
 
-*Css
+* Css
 
-*Php
+* Php
 
-*MySql
+* MySql
 
 
 ## Para rodar na sua máquina
