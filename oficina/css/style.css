@@ -1,0 +1,540 @@
+/*Reset Css Começo*/
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f0f0f5;
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button {
+  font: 16px Roboto, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.margin {
+  padding: 0 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.margin h6 {
+  flex: 1;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*Reset Css Fim*/
+/*Estilo Cabeçalho inicio*/
+header {
+  width: 100vw;
+  height: 56px;
+  background: #06b153;
+  display: flex;
+  align-items: center;
+}
+
+header .margin {
+  width: 100%;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #292929;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+header button {
+  background-color: transparent;
+  border: none;
+  vertical-align: middle;
+  color: #292929;
+}
+
+header img {
+  width: 200px;
+}
+
+/*Estilo Cabeçalho Fim*/
+/*Estilo Index inicio*/
+
+#searchInput {
+  max-width: 1000px;
+  height: auto;
+  margin: auto;
+  margin-top: 30px;
+}
+
+#searchInput .margin {
+  justify-content: center;
+}
+
+#searchInput input[name="searchText"] {
+  flex: 1;
+  height: 50px;
+  padding: 0 15px;
+  border: 0;
+  border-radius: 10px 0 0 10px;
+  color: #292929;
+  font-size: 18px;
+}
+
+#searchInput input[name="dateSearch"] {
+  height: 50px;
+  padding: 0 15px;
+  border: 0;
+  color: #292929;
+  font-size: 18px;
+}
+
+#btnSearch button {
+  width: 80px;
+  height: 50px;
+  background-color: #292929;
+  color: #f5f5f5;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  transition: 0.4s;
+}
+
+#btnSearch button:hover {
+  background-color: #151515;
+}
+
+#itens {
+  max-width: 1200px;
+  height: 75vh;
+  margin: auto;
+  margin-top: 30px;
+  overflow-x: auto;
+}
+
+#itens .margin {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+#itens .margin > * {
+  margin: 10px;
+}
+
+.item {
+  width: 275px;
+  height: 286px;
+  background-color: #06b153;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.item #head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item #head label {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: none;
+  transition: 0.4s;
+}
+
+.item #head label:hover {
+  background-color: #058c42;
+}
+
+.item h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.containt h2,
+h3,
+span,
+p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.containt {
+  display: flex;
+  flex-direction: column;
+}
+
+.containt h3 {
+  text-align: right;
+}
+
+.containt span,
+p {
+  font-weight: 400;
+  text-align: justify;
+}
+
+.containt span {
+  height: 105px;
+}
+
+.containt p {
+  font-size: 16px;
+  text-align: left;
+}
+
+.options {
+  height: 215px;
+  display: none;
+  flex-direction: column;
+}
+
+.option {
+  display: flex;
+  margin-top: 30px;
+}
+
+.option h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 15px;
+  color: #292929;
+}
+
+.option a {
+  text-decoration: none;
+  color: #292929;
+  display: flex;
+}
+
+.option button {
+  background-color: transparent;
+  border: none;
+  color: #292929;
+}
+
+.trigger-input {
+  display: none;
+}
+
+.trigger-input:checked + .container .containt {
+  display: none;
+}
+
+.trigger-input:checked + .container .options {
+  display: flex;
+}
+
+/*Estilo Index Fim*/
+/*Estilo Orçamento Inicio*/
+
+#addBudget {
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 10px;
+  background: #06b153;
+}
+
+#addBudget .margin {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+#addBudget h1 {
+  font-size: 24px;
+  font-weight: bold;
+  align-self: center;
+}
+
+#addBudget label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+#addBudget input,
+textarea {
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+  border: 0;
+  border-radius: 10px;
+  color: #292929;
+  font-size: 18px;
+}
+
+#addBudget textarea {
+  height: 120px;
+}
+
+#value-submit {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#addBudget input[name="value"] {
+  width: 40%;
+  text-align: center;
+}
+
+#addBudget input[type="submit"] {
+  width: 40%;
+  color: #f5f5f5;
+  background: #292929;
+}
+
+/*Estilo Orçamento fim*/
+
+/*Estilo Login Inicio*/
+
+#login {
+  width: 350px;
+  height: 90vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#login .margin {
+  width: 100%;
+  background-color: #06b153;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.login {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.login h1 {
+  font-size: 24px;
+  font-weight: bold;
+  align-self: center;
+}
+
+.login label {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.login input {
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+  border: 0;
+  border-radius: 10px;
+  color: #292929;
+  font-size: 18px;
+}
+
+.login input[type="submit"] {
+  margin-top: 30px;
+  color: #f5f5f5;
+  background: #292929;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.login input[type="submit"]:hover {
+  background: #151515;
+}
+
+.login a {
+  text-decoration: none;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 30px;
+  color: #292929;
+}
+
+/*Estilo Login Fim*/
+/*Responsividade Inicio*/
+
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+  body {
+    overflow: hidden;
+  }
+
+  .margin {
+    padding: 0 5px;
+  }
+
+  header img {
+    width: 120px;
+  }
+
+  header a {
+    font-size: 14px;
+  }
+
+  header svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  form {
+    padding: 5px;
+  }
+
+  #addBudget h1 {
+    font-size: 18px;
+  }
+
+  #addBudget label {
+    font-size: 14px;
+  }
+
+  #addBudget input[type="submit"] {
+    font-size: 12px;
+  }
+
+  #itens .margin {
+    margin-bottom: 30px;
+  }
+
+  #itens {
+    width: 275px;
+  }
+
+  #searchInput input[name="searchText"] {
+    width: 200px;
+    padding: 0 5px;
+  }
+
+  #searchInput input[name="dateSearch"] {
+    padding: 0 5px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    overflow: hidden;
+  }
+
+  .margin {
+    padding: 0 15px;
+  }
+
+  header img {
+    width: 160px;
+  }
+
+  header a {
+    font-size: 18px;
+  }
+
+  header svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  #searchInput {
+    max-width: 800px;
+  }
+
+  #addBudget h1 {
+    font-size: 18px;
+  }
+
+  #addBudget label {
+    font-size: 14px;
+  }
+
+  #addBudget input[type="submit"] {
+    font-size: 12px;
+  }
+
+  #itens .margin {
+    margin-bottom: 30px;
+  }
+
+  #itens {
+    width: 600px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1399px) {
+  body {
+    overflow: hidden;
+  }
+
+  .margin {
+    padding: 0 120px;
+  }
+
+  header img {
+    width: 160px;
+  }
+
+  header a {
+    font-size: 18px;
+  }
+
+  header svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  #addBudget h1 {
+    font-size: 18px;
+  }
+
+  #addBudget label {
+    font-size: 14px;
+  }
+
+  #addBudget input[type="submit"] {
+    font-size: 12px;
+  }
+
+  #itens .margin {
+    margin-bottom: 30px;
+  }
+
+  #itens {
+    width: 900px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  header .margin {
+    padding: 0 300px;
+  }
+}
+
+@media only screen and (min-width: 2100px) {
+  header .margin {
+    padding: 0 600px;
+  }
+}
+
+/*Responsividade Fim*/
